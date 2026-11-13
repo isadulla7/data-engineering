@@ -21,7 +21,7 @@ hide:
 <details class="track" open>
   <summary><span class="no">1</span><span class="nm">SQL (chuqur)</span><span class="st">3 / 10 dars</span></summary>
   <div class="in">
-    <p><a href="01-sql/">Yo'nalish sahifasini ochish</a> · <a href="01-sql/00-sozlash/">Muhitni sozlash</a></p>
+    <p><a href="01-sql/">Yo'nalish sahifasini ochish</a> · <a href="01-sql/00-sozlash/">Muhitni sozlash</a> · <a href="01-sql/atamalar/">📖 Atamalar lug'ati</a></p>
     <div class="scroll"><table><tbody>
       <tr><td>1-hafta</td><td><a href="01-sql/01-select-where/">01. SELECT, WHERE, ORDER BY, LIMIT va NULL</a> <span class="tag ok">tayyor</span> <a class="tag" href="01-sql/01-select-where/mashqlar/">mashqlar</a></td></tr>
       <tr><td>2-hafta</td><td><a href="01-sql/02-funksiyalar-case/">02. Funksiyalar, CASE WHEN va DISTINCT</a> <span class="tag ok">tayyor</span> <a class="tag" href="01-sql/02-funksiyalar-case/mashqlar/">mashqlar</a></td></tr>

@@ -13,6 +13,35 @@
 > [!NOTE]
 > **Nega bu data engineer uchun muhim?** Warehouse'dagi har bir hisobot, dashboard va **mart** jadvali aslida `GROUP BY` natijasi. "Kunlik daromad", "har bir mijozning umumiy xaridi", "oylik faol foydalanuvchilar" — hammasi shu darsdan.
 
+
+## 📖 Bu darsdagi atamalar
+
+To'liq ro'yxat: [Atamalar lug'ati](../atamalar.md).
+
+| Atama | Ma'nosi | Misol |
+|---|---|---|
+| **Agregatsiya** | Ko'p qatorni bitta songa jamlash | barcha to'lovlar → umumiy daromad |
+| **Agregat funksiya** | Jamlovchi funksiya | `COUNT`, `SUM`, `AVG`, `MIN`, `MAX` |
+| **`COUNT(*)`** | Barcha qatorlar soni | nechta to'lov bor |
+| **`COUNT(ustun)`** | Shu ustuni bo'sh bo'lmagan qatorlar soni | nechta ijara qaytarilgan |
+| **`COUNT(DISTINCT …)`** | Takrorlanmas qiymatlar soni | nechta turli mijoz to'lagan |
+| **`GROUP BY`** | Qatorlarni guruhlarga ajratish | har reyting uchun alohida |
+| **Guruh** | Bir xil qiymatli qatorlar to'plami | barcha `PG` filmlar |
+| **`HAVING`** | Guruhlarni filtrlash (guruhlashdan keyin) | 150$ dan ko'p to'laganlar |
+| **`FILTER`** | Agregatni faqat shartli qatorlar uchun hisoblash | `COUNT(*) FILTER (WHERE rating = 'G')` |
+| **Pivot** | Qatorlarni ustunlarga aylantirish | reytinglar yonma-yon ustunlarda |
+| **Hisobot** (report) | Biznes savollariga javob beruvchi jamlangan jadval | oylik daromad |
+| **Data mart** | Warehouse'dagi bitta mavzu uchun tayyor jadvallar | "Sotuvlar" marti |
+| **Dashboard** | Asosiy raqamlar va grafiklar bitta ekranda | rahbar har kuni ko'radigan panel |
+
+### Bir rasmda: agregatsiya nima?
+
+| | Agregatsiyasiz | Agregatsiya bilan |
+|---|---|---|
+| Savol | "Har bir to'lovni ko'rsat" | "Jami qancha to'langan?" |
+| Natija | minglab qator | **bitta** qator |
+| SQL | `SELECT amount FROM payment;` | `SELECT SUM(amount) FROM payment;` |
+
 ---
 
 ## 1. Agregat funksiyalar: ko'p qatorni bitta songa aylantirish 📦

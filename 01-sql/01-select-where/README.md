@@ -10,6 +10,47 @@
 - [ ] `NULL` bilan to'g'ri ishlaysiz (bu ko'p dasturchilar yiqiladigan joy);
 - [ ] so'rov qaysi tartibda bajarilishini tushunasiz.
 
+
+## 📖 Bu darsdagi atamalar
+
+Darsni boshlashdan oldin shu so'zlar bilan tanishib oling. To'liq ro'yxat: [Atamalar lug'ati](../atamalar.md).
+
+| Atama | Ma'nosi | Misol |
+|---|---|---|
+| **Ma'lumotlar bazasi** (database) | Ma'lumotlar tartibli saqlanadigan joy, ichida jadvallar bor | `dvdrental` bazasi |
+| **Jadval** (table) | Bir turdagi narsalar ro'yxati: qatorlar va ustunlar | `film`, `customer` |
+| **Qator** (row) | Jadvaldagi bitta narsa: bitta film, bitta mijoz | "Academy Dinosaur" filmi haqidagi barcha ma'lumot |
+| **Ustun** (column) | Har qatordagi bitta xususiyat | `title` (nomi), `length` (davomiyligi) |
+| **SQL** | Bazaga savol berish tili | `SELECT title FROM film;` |
+| **So'rov** (query) | Bazaga yuborilgan bitta SQL buyruq | Yuqoridagi qator bitta so'rov |
+| **Primary key** | Har qatorni yagona aniqlovchi ustun, takrorlanmaydi | `film_id` — har filmning o'z raqami |
+| **Foreign key** | Boshqa jadvaldagi qatorga ishora qiluvchi ustun | `payment.customer_id` → qaysi mijoz to'lagani |
+| **Shart** (condition) | Rost yoki yolg'on bo'ladigan ifoda | `length > 120` |
+| **Filtr** | Shartga mos kelmagan qatorlarni chiqarib tashlash | `WHERE rating = 'PG'` |
+| **Alias** | Ustunga vaqtinchalik yangi nom berish | `length AS daqiqa` |
+| **NULL** | "Qiymat yo'q / noma'lum". 0 ham, bo'sh matn ham emas | Hali qaytarilmagan DVD'ning qaytarilish sanasi |
+| **Izoh** (comment) | `--` dan keyingi yozuv, baza uni bajarmaydi | `-- bu izoh` |
+
+### SQL so'rovining tuzilishi
+
+Birinchi so'rovni bo'laklarga ajratib ko'ramiz:
+
+```sql
+SELECT title, length      -- 1. Qaysi USTUNLAR kerak?
+FROM film                 -- 2. Qaysi JADVALDAN?
+WHERE length > 120        -- 3. Qaysi QATORLAR qolsin? (shart)
+ORDER BY length DESC      -- 4. Qanday TARTIBDA?
+LIMIT 5;                  -- 5. NECHTASI?
+```
+
+O'zbekchaga tarjima qilsak: *"`film` jadvalidan davomiyligi 120 daqiqadan uzun filmlarning nomi va davomiyligini, eng uzunidan boshlab, 5 tasini ko'rsat."*
+
+> [!TIP]
+> Har bir SQL so'rovni shunday oddiy gapga "tarjima" qilib o'qishni odat qiling. Gapga aylantira olsangiz, demak tushungansiz.
+
+> [!NOTE]
+> `;` (nuqtali vergul) so'rov tugaganini bildiradi. SQL kalit so'zlarini (`SELECT`, `FROM`) katta harf bilan yozish shart emas, lekin odat shunday, chunki kod o'qishga oson bo'ladi.
+
 ---
 
 ## 1. Relyatsion baza nima? 🧱
