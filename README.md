@@ -1,5 +1,7 @@
 # 🛠️ Data Engineering: noldan Senior darajagacha
 
+🌐 **Saytda o'qish:** https://isadulla7.github.io/data-engineering/
+
 O'zbek tilida, chuqur va amaliy o'rganish yo'li. Har bir modulda darslar, ishlaydigan SQL/Python kodlar, mashqlar (yechimlari yashirin) va bitta portfolio loyihasi bor.
 
 > [!NOTE]
@@ -28,7 +30,7 @@ flowchart LR
 
 | # | Modul | Holat | Papka |
 |---|---|---|---|
-| 1 | SQL (chuqur) | 🟢 Jarayonda | [01-sql](01-sql/) |
+| 1 | SQL (chuqur) | 🟢 Jarayonda | [01-sql](01-sql/README.md) |
 | 2 | Python | ⚪ Kutilmoqda | — |
 | 3 | PostgreSQL va data modeling | ⚪ Kutilmoqda | — |
 | 0 | Linux, terminal, Git | ⚪ Kutilmoqda (Docker'dan oldin) | — |
