@@ -13,6 +13,8 @@
 
 👉 **[00-sozlash.md](00-sozlash.md)** — PostgreSQL, DBeaver va `dvdrental` namuna bazasini o'rnatish (taxminan 1 soat).
 
+📖 **[atamalar.md](atamalar.md)** — barcha atamalar oddiy tilda va hayotiy misollar bilan. Tushunmagan so'zga duch kelsangiz, shu yerga qarang.
+
 ## 📅 10 haftalik reja
 
 | Hafta | Dars | Mavzu | Holat |

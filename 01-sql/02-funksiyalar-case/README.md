@@ -14,6 +14,29 @@
 > [!NOTE]
 > **Nega bu data engineer uchun muhim?** Real ma'lumot "iflos" keladi: ortiqcha bo'shliqlar, har xil yozilgan ismlar, matn ko'rinishidagi sanalar. Pipeline'ning **staging** qatlamida aynan shu funksiyalar bilan ma'lumot tozalanadi.
 
+
+## 📖 Bu darsdagi atamalar
+
+To'liq ro'yxat: [Atamalar lug'ati](../atamalar.md).
+
+| Atama | Ma'nosi | Misol |
+|---|---|---|
+| **Funksiya** (function) | Qiymat olib, o'zgartirib qaytaradigan tayyor buyruq | `UPPER('ali')` → `ALI` |
+| **Argument** | Funksiyaga qavs ichida beriladigan qiymat | `ROUND(4.567, 2)` da `4.567` va `2` |
+| **Ma'lumot turi** (data type) | Ustunda qanday qiymat turishi: son, matn, sana | `int`, `text`, `date` |
+| **`int`** | Butun son | `42` |
+| **`numeric`** | Aniq kasr son, pul uchun | `4.99` |
+| **`float`** | Taxminiy kasr son, pulga yaramaydi | `0.1 + 0.2 = 0.30000000000000004` |
+| **`text`** | Matn, bitta qo'shtirnoqda yoziladi | `'Toshkent'` |
+| **`date` / `timestamp`** | Sana / sana va vaqt | `2026-11-13` / `2026-11-13 12:41` |
+| **Interval** | Vaqt oralig'i | `INTERVAL '7 days'` |
+| **Tur o'zgartirish** (cast) | Qiymatni boshqa turga o'tkazish | `'42'::int` |
+| **Butun bo'lish** | Butun / butun = butun, kasr tashlanadi | `7 / 2 = 3` |
+| **Qoldiq** (`%`) | Bo'lishdan qolgan qism | `7 % 2 = 1` |
+| **`CASE WHEN`** | "Agar … bo'lsa … aks holda …" | uzunlikka qarab "Qisqa / Uzun" |
+| **`DISTINCT`** | Takrorlanganlarni bittaga qisqartirish | qanday reytinglar borligi |
+| **Staging** | Pipeline'da xom ma'lumot tozalanadigan qatlam | ism va emaillarni tozalash shu yerda |
+
 ---
 
 ## 1. Matn funksiyalari 🔤

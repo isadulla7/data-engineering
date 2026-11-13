@@ -45,6 +45,7 @@ theme:
     - content.code.copy
     - content.tabs.link
     - toc.follow
+    - content.tooltips
 
 nav:
   - Mundarija: index.md
@@ -53,6 +54,7 @@ nav:
   - "1. SQL":
       - 01-sql/README.md
       - Muhitni sozlash: 01-sql/00-sozlash.md
+      - "📖 Atamalar lug'ati": 01-sql/atamalar.md
       - "01 — SELECT va WHERE":
           - Dars: 01-sql/01-select-where/README.md
           - Mashqlar: 01-sql/01-select-where/mashqlar.md
@@ -67,6 +69,10 @@ extra_css:
   - stylesheets/extra.css
 
 markdown_extensions:
+  - abbr
+  - pymdownx.snippets:
+      auto_append:
+        - sayt_includes/abbreviations.md
   - github-callouts
   - admonition
   - attr_list
