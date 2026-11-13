@@ -1,5 +1,7 @@
 # 🛠️ Data Engineering: noldan Senior darajagacha
 
+🌐 **Saytda o'qish:** https://isadulla7.github.io/data-engineering/
+
 O'zbek tilida, chuqur va amaliy o'rganish yo'li. Har bir modulda darslar, ishlaydigan SQL/Python kodlar, mashqlar (yechimlari yashirin) va bitta portfolio loyihasi bor.
 
 > [!NOTE]
