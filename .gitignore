@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Ma'lumot fayllari (katta datasetlar GitHub'ga yuklanmaydi)
+data/
+*.csv
+*.parquet
+*.tar
+*.zip
+
+# Muharrir va OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
