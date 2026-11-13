@@ -28,7 +28,7 @@ flowchart LR
 
 | # | Modul | Holat | Papka |
 |---|---|---|---|
-| 1 | SQL (chuqur) | 🟢 Jarayonda | [01-sql](01-sql/) |
+| 1 | SQL (chuqur) | 🟢 Jarayonda | [01-sql](01-sql/README.md) |
 | 2 | Python | ⚪ Kutilmoqda | — |
 | 3 | PostgreSQL va data modeling | ⚪ Kutilmoqda | — |
 | 0 | Linux, terminal, Git | ⚪ Kutilmoqda (Docker'dan oldin) | — |

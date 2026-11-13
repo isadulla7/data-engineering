@@ -1,0 +1,92 @@
+site_name: Data Engineering — noldan Senior'gacha
+site_description: O'zbek tilida data engineering darslari, mashqlar va loyihalar
+site_url: https://isadulla7.github.io/data-engineering/
+repo_url: https://github.com/isadulla7/data-engineering
+repo_name: isadulla7/data-engineering
+edit_uri: edit/main/
+
+# Sayt manbasi scripts/prepare_docs.sh tomonidan yig'iladi
+docs_dir: .site_src
+
+theme:
+  name: material
+  language: uz
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Tungi rejim
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Kunduzgi rejim
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/database-cog
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+nav:
+  - Bosh sahifa: README.md
+  - Yo'l xaritasi: ROADMAP.md
+  - "1. SQL":
+      - 01-sql/README.md
+      - Muhitni sozlash: 01-sql/00-sozlash.md
+      - "01 — SELECT va WHERE":
+          - Dars: 01-sql/01-select-where/README.md
+          - Mashqlar: 01-sql/01-select-where/mashqlar.md
+      - "02 — Funksiyalar va CASE":
+          - Dars: 01-sql/02-funksiyalar-case/README.md
+          - Mashqlar: 01-sql/02-funksiyalar-case/mashqlar.md
+      - "03 — GROUP BY":
+          - Dars: 01-sql/03-group-by/README.md
+          - Mashqlar: 01-sql/03-group-by/mashqlar.md
+
+markdown_extensions:
+  - github-callouts
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/isadulla7
+
+copyright: Sadulla · Data Engineering o'quv yo'li

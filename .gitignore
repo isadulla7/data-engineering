@@ -17,3 +17,7 @@ data/
 .idea/
 .DS_Store
 Thumbs.db
+
+# MkDocs sayt
+.site_src/
+site/
