@@ -14,26 +14,27 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Tungi rejim
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Kunduzgi rejim
   font:
-    text: Inter
-    code: JetBrains Mono
+    text: IBM Plex Sans
+    code: IBM Plex Mono
   icon:
     logo: material/database-cog
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top
@@ -46,8 +47,9 @@ theme:
     - toc.follow
 
 nav:
-  - Bosh sahifa: README.md
+  - Mundarija: index.md
   - Yo'l xaritasi: ROADMAP.md
+  - Qanday o'qish: qanday-oqish.md
   - "1. SQL":
       - 01-sql/README.md
       - Muhitni sozlash: 01-sql/00-sozlash.md
@@ -60,6 +62,9 @@ nav:
       - "03 — GROUP BY":
           - Dars: 01-sql/03-group-by/README.md
           - Mashqlar: 01-sql/03-group-by/mashqlar.md
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - github-callouts
